@@ -53,5 +53,41 @@
     }
     
     
+var modal = document.getElementById('myModal');
+var btnIngresar = document.querySelector('.login100-form-btn');
+var closeBtn = document.querySelector('.close');
+var btnIngresarCodigo = document.getElementById('btnIngresarCodigo');
+var codigoInput = document.getElementById('codigo');
+
+
+btnIngresar.addEventListener('click', function() {
+  modal.style.display = 'block';
+});
+
+
+closeBtn.addEventListener('click', function() {
+  modal.style.display = 'none';
+});
+
+
+window.addEventListener('click', function(event) {
+  if (event.target === modal) {
+    modal.style.display = 'none';
+  }
+});
+
+// Manejar el ingreso con el código
+btnIngresarCodigo.addEventListener('click', function() {
+  var codigoIngresado = codigoInput.value;
+  var codigoCorrecto = "12345"; // Reemplaza esto con el código correcto
+
+  if (codigoIngresado === codigoCorrecto) {
+    alert("¡Ingreso exitoso!"); // Puedes reemplazar esto con tu lógica de redirección a la página principal
+    modal.style.display = 'none';
+  } else {
+    alert("Código incorrecto. Inténtalo de nuevo.");
+  }
+});
+
 
 })(jQuery);

@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\USUARIO\\Desktop\\tdm\\TDM\\TDM.csproj": {}
+    "C:\\Users\\lorena.vargas\\Documents\\lorena\\PPI\\Portal_Autogestion\\TDM.csproj": {}
   },
   "projects": {
-    "C:\\Users\\USUARIO\\Desktop\\tdm\\TDM\\TDM.csproj": {
+    "C:\\Users\\lorena.vargas\\Documents\\lorena\\PPI\\Portal_Autogestion\\TDM.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\USUARIO\\Desktop\\tdm\\TDM\\TDM.csproj",
+        "projectUniqueName": "C:\\Users\\lorena.vargas\\Documents\\lorena\\PPI\\Portal_Autogestion\\TDM.csproj",
         "projectName": "TDM",
-        "projectPath": "C:\\Users\\USUARIO\\Desktop\\tdm\\TDM\\TDM.csproj",
-        "packagesPath": "C:\\Users\\USUARIO\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\USUARIO\\Desktop\\tdm\\TDM\\obj\\",
+        "projectPath": "C:\\Users\\lorena.vargas\\Documents\\lorena\\PPI\\Portal_Autogestion\\TDM.csproj",
+        "packagesPath": "C:\\Users\\lorena.vargas\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\lorena.vargas\\Documents\\lorena\\PPI\\Portal_Autogestion\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\USUARIO\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\lorena.vargas\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
@@ -45,10 +45,6 @@
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
               "version": "[7.0.11, )"
-            },
-            "System.Net.Http.Json": {
-              "target": "Package",
-              "version": "[7.0.1, )"
             }
           },
           "imports": [
@@ -62,6 +58,24 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[6.0.22, 6.0.22]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Host.win-x64",
+              "version": "[6.0.22, 6.0.22]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[6.0.22, 6.0.22]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[6.0.22, 6.0.22]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
@@ -70,7 +84,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.407\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100-rc.1.23463.5\\RuntimeIdentifierGraph.json"
         }
       }
     }

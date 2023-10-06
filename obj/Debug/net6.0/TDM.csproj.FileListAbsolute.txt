@@ -231,3 +231,7 @@ C:\Users\lorena.vargas\Documents\lorena\PPI\Portal_Autogestion\obj\Debug\net6.0\
 C:\Users\lorena.vargas\Documents\lorena\PPI\Portal_Autogestion\obj\Debug\net6.0\TDM.pdb
 C:\Users\lorena.vargas\Documents\lorena\PPI\Portal_Autogestion\obj\Debug\net6.0\TDM.genruntimeconfig.cache
 C:\Users\lorena.vargas\Documents\lorena\PPI\Portal_Autogestion\obj\Debug\net6.0\ref\TDM.dll
+C:\Users\USUARIO\Desktop\tdm\TDM\bin\Debug\net6.0\System.Net.Http.Json.dll
+C:\Users\USUARIO\Desktop\tdm\TDM\bin\Debug\net6.0\System.Text.Encodings.Web.dll
+C:\Users\USUARIO\Desktop\tdm\TDM\bin\Debug\net6.0\System.Text.Json.dll
+C:\Users\USUARIO\Desktop\tdm\TDM\bin\Debug\net6.0\runtimes\browser\lib\net6.0\System.Text.Encodings.Web.dll

@@ -646,3 +646,40 @@ iframe {
 .codig-form-btn:hover {
   background: #1f2639;
 }
+/* Estilos para el menú */
+.menu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    background-color: #333; /* Cambia el color de fondo del menú según tus preferencias */
+}
+
+.menu-item {
+    font-family: Proxima-Nova-Regular, sans-serif;
+    font-size: 14px;
+    line-height: 1.7;
+    color: #666666;
+    margin: 0;
+    padding: 10px 20px;
+    text-decoration: none;
+    transition: all 0.4s;
+}
+
+.menu-item:hover {
+    background-color: #e6007e; /* Cambia el color de fondo al pasar el mouse sobre los elementos del menú */
+    color: #fff; /* Cambia el color del texto al pasar el mouse sobre los elementos del menú */
+}
+
+/* Estilos para el menú responsivo (opcional) */
+@media (max-width: 768px) {
+    .menu {
+        flex-direction: column; /* Cambia la dirección del menú a columna en pantallas pequeñas */
+        align-items: center;
+    }
+
+    .menu-item {
+        padding: 10px 0;
+    }
+}

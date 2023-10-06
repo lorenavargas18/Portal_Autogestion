@@ -82,10 +82,10 @@ btnIngresarCodigo.addEventListener('click', function() {
   var codigoCorrecto = "12345"; // Reemplaza esto con el código correcto
 
   if (codigoIngresado === codigoCorrecto) {
-    alert("¡Ingreso exitoso!"); // Puedes reemplazar esto con tu lógica de redirección a la página principal
-    modal.style.display = 'none';
+      alert("¡Ingreso exitoso!"); 
+      window.location.href = "Bienvenida.cshtml"; 
   } else {
-    alert("Código incorrecto. Inténtalo de nuevo.");
+      alert("Código incorrecto. Inténtalo de nuevo.");
   }
 });
 

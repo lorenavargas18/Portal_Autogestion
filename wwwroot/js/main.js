@@ -1,13 +1,9 @@
-
 (function ($) {
     "use strict";
-
-    
-    /*==================================================================
-    [ Validate ]*/
     var input = $('.validate-input .input100');
 
     $('.validate-form').on('submit',function(){
+        event.preventDefault();
         var check = true;
 
         for(var i=0; i<input.length; i++) {
@@ -52,42 +48,40 @@
         $(thisAlert).removeClass('alert-validate');
     }
     
+
+    var modal = document.getElementById('myModal');
+    var btnIngresar = document.querySelector('.login100-form-btn');
+    var closeBtn = document.querySelector('.close');
+    var btnIngresarCodigo = document.getElementById('btnIngresarCodigo');
+    var codigoInput = document.getElementById('codigo');
     
-var modal = document.getElementById('myModal');
-var btnIngresar = document.querySelector('.login100-form-btn');
-var closeBtn = document.querySelector('.close');
-var btnIngresarCodigo = document.getElementById('btnIngresarCodigo');
-var codigoInput = document.getElementById('codigo');
+    // Función para validar el código ingresado
+    function validarCodigo() {
+        var codigoIngresado = codigoInput.value.trim();
+        if (codigoIngresado === '5432') {
+            // Código válido, redirige a la página deseada
+            window.location.href = 'https://www.youtube.com/watch?v=LKZ2omTPgBQ&ab_channel=JuanGabrielVEVO'; // Reemplaza 'URL_DE_DESTINO' con la URL a la que deseas redirigir
+        } else {
+            // Código no válido, muestra un mensaje de error
+            alert('Código incorrecto. Inténtalo de nuevo.');
+        }
+    }
 
+    btnIngresar.addEventListener('click', function() {
+        modal.style.display = 'block';
+    });
 
-btnIngresar.addEventListener('click', function() {
-  modal.style.display = 'block';
-});
+    btnIngresarCodigo.addEventListener('click', function() {
+        validarCodigo();
+    });
 
+    closeBtn.addEventListener('click', function() {
+        modal.style.display = 'none';
+    });
 
-closeBtn.addEventListener('click', function() {
-  modal.style.display = 'none';
-});
-
-
-window.addEventListener('click', function(event) {
-  if (event.target === modal) {
-    modal.style.display = 'none';
-  }
-});
-
-// Manejar el ingreso con el código
-btnIngresarCodigo.addEventListener('click', function() {
-  var codigoIngresado = codigoInput.value;
-  var codigoCorrecto = "12345"; // Reemplaza esto con el código correcto
-
-  if (codigoIngresado === codigoCorrecto) {
-      alert("¡Ingreso exitoso!"); 
-      window.location.href = "Bienvenida.cshtml"; 
-  } else {
-      alert("Código incorrecto. Inténtalo de nuevo.");
-  }
-});
-
-
+    window.addEventListener('click', function(event) {
+        if (event.target === modal) {
+            modal.style.display = 'none';
+        }
+    });
 })(jQuery);

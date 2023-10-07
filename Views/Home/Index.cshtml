@@ -51,7 +51,7 @@
 					</div> *@
 					<div class="wrap-input100 validate-input" data-validate="Ingresar 10 digitos">
 
-						<input class="input100" type="number" name="card" placeholder="Número de cédula">
+						<input class="input100" id="numeroCedula" type="number" placeholder="Número de cédula">
 						<span class="focus-input100"></span>
 						<span class="symbol-input100">
 							<i class="fa fa-id-card-o" aria-hidden="true"></i>
@@ -61,7 +61,7 @@
 				
 
 					<div class="container-login100-form-btn">
-						<button class="login100-form-btn">
+						<button id="enviarCodigoBtn" class="login100-form-btn">
 							Enviar código
 						</button>
 					</div>
@@ -74,7 +74,7 @@
 
 <div id="myModal" class="modal">
   <div class="modal-content">
-    <span class="close">&times;</span>
+   
 
     <p class="txt2">Se ha enviado un código de acceso a tu WhatsApp.</p>
 
@@ -102,7 +102,9 @@
 	</script>
 	<!--===============================================================================================-->
 	<script src="js/main.js"></script>
-	<script> src="js/api.js"</script>
+	<script src="js/api.js"></script>
+
+
 
 </body>
 
